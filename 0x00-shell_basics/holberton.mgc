@@ -1,2 +1,2 @@
 #!/bin/bash
-offset 0 type [holberton]
+0 string HOLBERTON
