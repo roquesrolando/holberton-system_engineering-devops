@@ -1,2 +1,2 @@
 #!/bin/bash
-mv find . -type f -name "[[:upper:]]*" /tmp/u
+mv -name "[[:upper:]]*" /tmp/u
