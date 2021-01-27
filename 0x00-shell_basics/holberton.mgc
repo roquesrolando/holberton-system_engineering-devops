@@ -1,2 +1,2 @@
 #!/bin/bash
-type string HOLBERTON offset 0
+type s HOLBERTON offset 0
