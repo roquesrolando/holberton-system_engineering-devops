@@ -1,3 +1,3 @@
 #!/bin/bash
-chwon betty:holberton _hello
+chwon -h betty:holberton _hello
 
