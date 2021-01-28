@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u+x /var/www/html
+chmod -R ugo+x */
