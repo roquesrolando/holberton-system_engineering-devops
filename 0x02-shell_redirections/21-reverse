@@ -1,2 +1,2 @@
 #!/bin/bash
-echo rolando | rev
+echo Reverse | rev
