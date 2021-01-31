@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -c1 testfile | tr [:lower:] [:upper:]
