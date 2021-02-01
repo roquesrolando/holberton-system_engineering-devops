@@ -1,2 +1,2 @@
 #!/bin/bash
-expr + 2**3
+echo $([base2]10}
