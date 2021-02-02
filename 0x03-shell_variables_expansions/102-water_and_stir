@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((behlnort#$holberton))
+printf “%o” 44834284 → 253016754
