@@ -1,2 +1,2 @@
 #!/bin/bash
-perl -n -e '$.%2==1&&print'
+perl -ne 'print if (++$x)%2'
