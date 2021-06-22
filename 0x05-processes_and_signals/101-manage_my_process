@@ -19,7 +19,7 @@ then
 		rm $file
 		./manage_my_process &
 		echo "$!" > $file
-		echo "manage_my_position restarted"
+		echo "manage_my_process restarted"
 		;;
 		*)
 		echo "Usage: manage_my_process {start|stop|restart}"
