@@ -10,12 +10,12 @@ then
 		echo "manage_my_process started"
 		;;
 		"stop")
-		kill $( pgrep -of "manage_my_process" )
+		kill "$( pgrep -of "manage_my_process" )"
 		rm $file
 		echo "manage_my_process stopped"
 		;;
 		"restart")
-		kill $( pgrep -of "manage_my_process" )
+		kill "$( pgrep -of "manage_my_process" )"
 		rm $file
 		./manage_my_process &
 		echo "$!" > $file
