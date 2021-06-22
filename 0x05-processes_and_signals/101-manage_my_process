@@ -22,8 +22,8 @@ then
 		echo "manage_my_position restarted"
 		;;
 		*)
-		echo "Usage: manage_my_process {start|stop|restart|}"
+		echo "Usage: manage_my_process {start|stop|restart}"
 	esac
 else
-	echo "Usage: manage_my_process {start|stop|restart|}"
+	echo "Usage: manage_my_process {start|stop|restart}"
 fi
