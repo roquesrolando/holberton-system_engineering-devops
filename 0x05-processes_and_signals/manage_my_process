@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Prints 'I am alive!'
-
 while ((1))
 do
 	echo "I am alive!" >> "/tmp/my_process"

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Manage my process
-
 file="/var/run/my_process.pid"
 if [ $# -eq 1 ]
 then
