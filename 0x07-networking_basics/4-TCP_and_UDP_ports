@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displayslistening ports
+netstat -plnt
