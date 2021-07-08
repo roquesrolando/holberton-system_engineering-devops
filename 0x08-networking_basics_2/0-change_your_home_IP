@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env ruby
 # Changes the IP the localhost
 cp /etc/hosts ~/hosts.new
 sed -i '127.0.0.2 localhost' ~/hosts.new
