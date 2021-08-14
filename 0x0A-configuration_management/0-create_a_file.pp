@@ -1,4 +1,4 @@
-# Creates a file
+# Creates a file using Puppet
 file { 'holberton':
   ensure  => 'file',
   path    => '/tmp/holberton',
