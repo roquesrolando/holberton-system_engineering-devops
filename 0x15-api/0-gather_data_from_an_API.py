@@ -6,6 +6,7 @@ import sys
 if __name__ == "__main__":
 
     count = 0
+    total = 0
 
     ID = sys.argv[1]
     site = 'https://jsonplaceholder.typicode.com/'
