@@ -13,5 +13,5 @@ if __name__ == "__main__":
     with open('{}.csv'.format(ID), 'w') as export:
         for i in dos:
             export.write('"{}","{}","{}","{}"\n'.format(ID, name,
-                                                           i['completed'],
-                                                           i['title']))
+                                                        i['completed'],
+                                                        i['title']))
