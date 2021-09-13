@@ -12,6 +12,6 @@ if __name__ == "__main__":
     name = user.json().get('username')
     with open('{}.csv'.format(ID), 'w') as export:
         for i in dos:
-            export.write('"{}", "{}", "{}", "{}"\n'.format(ID, name,
+            export.write('"{}","{}","{}","{}"\n'.format(ID, name,
                                                            i['completed'],
                                                            i['title']))
