@@ -9,7 +9,7 @@ if __name__ == "__main__":
     site = 'https://jsonplaceholder.typicode.com/'
     dos = requests.get(site + 'todos?userId={}'.format(ID)).json()
     user = requests.get(site + 'users/{}'.format(ID))
-    name = user.json().get('name')
+    name = user.json().get('username')
     with open('{}.csv'.format(ID), 'w') as export:
         for i in dos:
             export.write('"{}", "{}", "{}", "{}"\n'.format(ID, name,
