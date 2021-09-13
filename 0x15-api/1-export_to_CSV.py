@@ -5,11 +5,13 @@ import sys
 
 if __name__ == "__main__":
 
-
     ID = sys.argv[1]
     site = 'https://jsonplaceholder.typicode.com/'
     dos = requests.get(site + 'todos?userId={}'.format(ID)).json()
     user = requests.get(site + 'users/{}'.format(ID))
     name = user.json().get('name')
-    for i in dos:
-        print('"{}", "{}", "{}", "{}"'.format(ID, name, i['completed'], i['title']))
+    with open('{}.csv'.format(ID), 'w') as export:
+        for i in dos:
+            export.write('"{}", "{}", "{}", "{}"\n'.format(ID, name,
+                                                  i['completed'],
+                                                  i['title']))
