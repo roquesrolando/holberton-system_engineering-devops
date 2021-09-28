@@ -17,11 +17,9 @@ def top_ten(subreddit):
                Safari/537.36"}
 
     response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        response = response.json().get('data').get('children')
-
-        for post in response:
-            title = post.get('data').get('title')
-            print(title)
+    if response.status_code in [302, 404]:
+        print('None')
     else:
-        print("None")
+        posts = response.json()['data']['children']
+        for top in posts:
+            print(top['data']['title'])
