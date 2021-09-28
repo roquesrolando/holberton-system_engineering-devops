@@ -9,7 +9,7 @@ def top_ten(subreddit):
     url = 'https://www.reddit.com/r/{}/top.json?limit=10'.format(subreddit)
     agent = {'User-Agent': 'requested'}
     response = requests.get(url, headers=agent)
-    if response.status_code != '200':
+    if response.status_code in [302, 404]:
         print('None')
     else:
         posts = response.json()['data']['children']
